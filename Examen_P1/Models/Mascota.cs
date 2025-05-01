@@ -16,3 +16,4 @@ namespace Examen_P1.Models
         public Dueño? Dueño { get; set; } // Relación con la clase Dueño
     }
 }
+    
