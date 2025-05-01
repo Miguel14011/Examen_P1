@@ -24,7 +24,6 @@ namespace Examen_P1.Models
             }
         }
 
-
         public string MolinaM { get; set; }
     }
 }
