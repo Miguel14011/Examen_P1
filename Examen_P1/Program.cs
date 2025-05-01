@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Examen_P1;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<DataB_MolinaM>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DataB_MolinaM") ?? throw new InvalidOperationException("Connection string 'DataB_MolinaM' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
